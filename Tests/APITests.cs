@@ -103,7 +103,7 @@ namespace ECommerceAutomation.Tests
 
             var userParameters = new Dictionary<string, string>
             {
-                { "name", "API Test User" },
+                { "name", "API Kres User" },
                 { "email", email },
                 { "password", "ApiTest@123" },
                 { "title", "Mr" },

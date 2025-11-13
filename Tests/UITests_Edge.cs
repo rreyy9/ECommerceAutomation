@@ -29,9 +29,9 @@ namespace ECommerceAutomation.Tests
         {
             Log("Starting Test: Login User with Correct Email and Password (Edge)");
 
-            string email = "testuser@example.com";
+            string email = "kresuser@example.com";
             string password = "Test@123";
-            string expectedUsername = "Test User";
+            string expectedUsername = "Kres User";
 
             try
             {

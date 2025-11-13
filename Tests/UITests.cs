@@ -20,9 +20,9 @@ namespace ECommerceAutomation.Tests
             Log("Starting Test: Login User with Correct Email and Password");
 
             // Test Data
-            string email = "testuser@example.com";
+            string email = "kresuser@example.com";
             string password = "Test@123";
-            string expectedUsername = "Test User";
+            string expectedUsername = "Kres User";
 
             try
             {
@@ -126,7 +126,7 @@ namespace ECommerceAutomation.Tests
 
             // Test Data - Generate unique email with timestamp
             string timestamp = DateTime.Now.ToString("yyyyMMddHHmmss");
-            string name = "AutoTest User";
+            string name = "AutoKres User";
             string email = $"autotest_{timestamp}@example.com";
             string password = "Test@123";
 
