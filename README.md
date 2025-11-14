@@ -91,6 +91,13 @@ dotnet test --filter "TestCategory=Edge"
 5. **Basic Reporting**: Uses standard MSTest output; no HTML reports or custom dashboards
 6. **Screenshot Storage**: Failure screenshots saved to `bin/Debug/net8.0/Screenshots/` but not attached to test reports
 7. **Single Environment**: No support for multiple environments (Dev/QA/Prod switching)
+8. **Performance Limitations:**
+   - Tests run sequentially, not in parallel (slower execution time for large test suites)
+   - Each test creates a new browser instance (overhead of ~2-3 seconds per test for browser startup/teardown)
+   - No browser reuse between tests (could be optimized with session management)
+   - Synchronous waits and retries can add cumulative delays
+   - No headless mode configured (GUI browser is slower than headless)
+   - Large test suites would take considerable time (e.g., 50 tests × 30 seconds = ~25 minutes)
 
 ---
 
